@@ -1,0 +1,291 @@
+{
+  "tpl": [
+    {
+      "name": "项目设置",
+      "value": "setting",
+      "content": [
+        {
+          "title": "输出目标",
+          "value": "platform",
+          "type": "checkbox",
+          "children": [
+            "pc",
+            "h5"
+          ],
+          "message": "至少选择一项内容",
+          "require": true
+        }
+      ]
+    },
+    {
+      "name": "项目信息",
+      "value": "info",
+      "content": [
+        {
+          "title": "项目英文名",
+          "value": "name",
+          "require": true,
+          "remark": "不能出现空格，支持大写、小写字母和数字",
+          "pattern": "^[0-9a-zA-Z]+$"
+        },
+        {
+          "title": "项目中文名",
+          "value": "title",
+          "require": true
+        },
+        {
+          "title": "项目描述",
+          "value": "desc",
+          "remark": "需要换行处添加<br>标识符"
+        }
+      ]
+    },
+    {
+      "name": "tdk",
+      "value": "tdk",
+      "content": [
+        {
+          "title": "t",
+          "value": "t",
+          "require": true
+        },
+        {
+          "title": "d",
+          "value": "d"
+        },
+        {
+          "title": "k",
+          "value": "k"
+        }
+      ]
+    },
+    {
+      "name": "项目图片管理",
+      "value": "banner",
+      "content": [
+        {
+          "title": "h5-banner",
+          "value": "h5",
+          "type": "url",
+          "require": true,
+          "remark": "750*564 px"
+        },
+        {
+          "title": "pc-banner",
+          "value": "pc",
+          "type": "url",
+          "require": true,
+          "remark": "1920*664 px"
+        }
+      ]
+    },
+    {
+      "name": "项目皮肤管理",
+      "value": "color",
+      "content": [
+        {
+          "title": "设置 背景 颜色",
+          "value": "bg",
+          "type": "string",
+          "remark": "输入6位颜色编码,例如：ffffff,不填默认 edefec"
+        },
+        {
+          "title": "设置 项目描述字体 颜色",
+          "value": "infoDesc",
+          "type": "string",
+          "remark": "输入6位颜色编码,例如：ffffff,不填默认 ffffff"
+        },
+        {
+          "title": "设置 分段标题/导航背景 颜色",
+          "value": "important",
+          "type": "string",
+          "remark": "输入6位颜色编码,例如：ffffff,不填默认 c0504e"
+        },
+        {
+          "title": "设置 分段描述字体 颜色",
+          "value": "desc",
+          "type": "string",
+          "remark": "输入6位颜色编码,例如：ffffff,不填默认 333333"
+        }
+      ]
+    },
+    {
+      "name": "导航设置",
+      "value": "nav",
+      "switch": true,
+      "content": [
+        {
+          "title": "设置导航栏",
+          "value": "exist",
+          "type": "radio",
+          "remark": "导航只能支持一行等分"
+        },
+        {
+          "title": "设置导航主题为暗色",
+          "value": "theme",
+          "type": "radio",
+          "remark": "默认为白色底"
+        }
+      ]
+    },
+    {
+      "name": "微信分享内容",
+      "value": "wechat",
+      "content": [
+        {
+          "title": "朋友圈标题",
+          "value": "shareTimeLineTit",
+          "require": true,
+          "remark": "不超过38个字符"
+        },
+        {
+          "title": "朋友标题",
+          "value": "shareAppMessageTit",
+          "require": true,
+          "remark": "不超过32个字符"
+        },
+        {
+          "title": "朋友描述",
+          "value": "shareAppMessageDesc",
+          "require": true,
+          "remark": "不超过34个字符"
+        },
+        {
+          "title": "微信分享图片",
+          "value": "shareImg",
+          "require": true,
+          "type": "url",
+          "placeholder": "url",
+          "remark": "300*300 jpg"
+        }
+      ]
+    },
+    {
+      "name": "优惠券设置",
+      "value": "coupon",
+      "switch": true,
+      "content": [
+        {
+          "title": "设置优惠券",
+          "value": "exist",
+          "type": "radio"
+        },
+        {
+          "title": "标题",
+          "value": "title",
+          "remark": "文字在上方"
+        },
+        {
+          "title": "描述",
+          "value": "desc",
+          "remark": "文字在下方"
+        },
+        {
+          "title": "二维码地址",
+          "value": "img",
+          "type": "url",
+          "remark": "该生成的二维码地址"
+        },
+        {
+          "title": "优惠券跳转链接",
+          "value": "link",
+          "type": "url",
+          "remark": "优惠券页面地址"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "section": {
+      "name": "分段内容",
+      "value": "section",
+      "content": {
+        "title": {
+          "title": "中文标题",
+          "value": "title",
+          "require": true,
+          "index": 0
+        },
+        "name": {
+          "title": "英文标题",
+          "value": "name",
+          "require": true,
+          "remark": "不能出现空格，支持大写、小写字母和数字",
+          "pattern": "^[0-9a-zA-Z]+$",
+          "index": 0
+        },
+        "desc": {
+          "title": "分段描述",
+          "value": "desc",
+          "remark": "需要换行处添加<br>标识符",
+          "index": 0
+        },
+        "journey": {
+          "title": "玩法数据",
+          "value": "journey",
+          "children": {
+            "id": {
+              "value": "id",
+              "type": "number",
+              "placeholder": "id",
+              "require": true,
+              "index": 0
+            },
+            "desc": {
+              "value": "desc",
+              "placeholder": "描述",
+              "index": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "multiImg": {
+    "value": "img",
+    "children": [
+      {
+        "title": "pc端",
+        "value": "pc",
+        "content": [
+          {
+            "value": "url",
+            "type": "url",
+            "placeholder": "图片地址"
+          },
+          {
+            "value": "w",
+            "type": "number",
+            "placeholder": "图片宽度"
+          },
+          {
+            "value": "h",
+            "type": "number",
+            "placeholder": "图片高度"
+          }
+        ]
+      },
+      {
+        "title": "h5端",
+        "value": "h5",
+        "content": [
+          {
+            "value": "url",
+            "type": "url",
+            "placeholder": "图片地址"
+          },
+          {
+            "value": "w",
+            "type": "number",
+            "placeholder": "图片宽度"
+          },
+          {
+            "value": "h",
+            "type": "number",
+            "placeholder": "图片高度"
+          }
+        ]
+      }
+    ]
+  }
+}

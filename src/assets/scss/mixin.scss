@@ -1,0 +1,33 @@
+@mixin cc {
+  &:after {
+    content: " ";
+    visibility: hidden;
+    display: table;
+    height: 0;
+    clear: both;
+  }
+}
+
+@mixin el-size($valueW,$valueH:$valueW) {
+  width: $valueW+px;
+  height: $valueH+px;
+}
+
+@mixin flex-center(){
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin ellipsis-text-multi($clamp:2){
+  display: -webkit-box;
+  //text-overflow: ellipsis;
+  -webkit-line-clamp: $clamp;
+  -webkit-box-orient: vertical;
+  overflow : hidden;
+}

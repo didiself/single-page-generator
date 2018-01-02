@@ -1,0 +1,61 @@
+{
+  "setting_platform": [
+    "h5",
+    "pc"
+  ],
+  "info_name": "test",
+  "info_title": "测试项目",
+  "info_desc": "第一行文字<br>第二行文字",
+  "tdk_t": "标题",
+  "tdk_d": "描述",
+  "tdk_k": "关键字",
+  "banner_h5": "http://pic.8pig.com/img/activity/common/data/17maple/app-banner.jpg",
+  "banner_pc": "http://pic.8pig.com/img/activity/common/data/17Manager/pc-banner.jpg",
+  "color_bg": "",
+  "color_infoDesc": "",
+  "color_important": "000000",
+  "color_desc": "ff0000",
+  "nav_exist": true,
+  "nav_theme": false,
+  "wechat_shareTimeLineTit": "不超过38个字符",
+  "wechat_shareAppMessageTit": "不超过32个字符",
+  "wechat_shareAppMessageDesc": "不超过34个字符",
+  "wechat_shareImg": "http://pic.8pig.com/img/activity/common/data/17Manager/pc-banner.jpg",
+  "coupon_exist": true,
+  "coupon_title": "文字在上方",
+  "coupon_desc": "文字在下方",
+  "coupon_img": "http://pic.8pig.com/img/activity/common/data/17Manager/pc-banner.jpg",
+  "coupon_link": "http://www.8pig.com/",
+  "section": [
+    {
+      "title": "中文标题1",
+      "name": "name1",
+      "desc": "单行描述文本",
+      "journey": [
+        {
+          "id": 1111,
+          "desc": "最佳游玩时段：11月中旬-12月上旬<br>推荐理由：温泉底下赏红叶，还能吃红叶"
+        },
+        {
+          "id": 1001,
+          "desc": "最佳游玩时段：10月上旬-11月上旬<br>推荐理由：北美枫林中看最壮观三文鱼回流"
+        }
+      ]
+    },
+    {
+      "title": "中文标题2",
+      "name": "name2",
+      "desc": "单行描述文本",
+      "journey": [
+        {
+          "id": 2222,
+          "desc": "最佳游玩时段：11月上旬-11月下旬<br>推荐理由：与中国渊源颇深的日本东北赏红叶线路"
+        },
+        {
+          "id": 2002,
+          "desc": "最佳游玩时段：11月上旬-11月下旬<br>推荐理由：高颜值缆车赏红叶+水果温泉美肤"
+        }
+      ]
+    }
+  ]
+}

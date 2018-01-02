@@ -4,9 +4,6 @@
   "description": "A single page generator which base on vue.js",
   "scripts": {
     "dev": "babel-node server.js",
-    "backend": "babel-node ./backend/server.js",
-    "start": "npm run dev & npm run backend",
-    "generate": "babel-node ./build/generate.js",
     "build": "babel --no-babelrc ./src/assets/js -d ./dist/js --presets=env --minified"
   },
   "keywords": [
